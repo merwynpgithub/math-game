@@ -1,7 +1,7 @@
 require_relative ("player")
 
 class Game
-  attr_accessor :player1, :player2, :num1, :num2, :current_player, :ans
+  # attr_accessor :player1, :player2, :num1, :num2, :current_player, :ans
 
  def initialize(player1, player2)
     @player1 = player1
