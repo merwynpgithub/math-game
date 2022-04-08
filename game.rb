@@ -1,7 +1,6 @@
 require_relative ("player")
 
 class Game
-  # attr_accessor :player1, :player2, :num1, :num2, :current_player, :ans
 
  def initialize(player1, player2)
     @player1 = player1
@@ -52,8 +51,8 @@ class Game
     @current_player.lives -= 1
   end
   puts @current_player.lives
-  puts "player1 lives are #{@player1.lives}"
-  puts "player2 lives are #{@player2.lives}"
+  puts "#{@player1.name}'s lives are #{@player1.lives}"
+  puts "#{@player2.name}'s lives are #{@player2.lives}"
  end
 
  def switch_player
@@ -69,7 +68,6 @@ end
 
 p1 = Player.new("David", 3)
 p2 = Player.new("Merwyn", 3)
-puts p1.inspect
-puts p2.inspect
+
 game1 = Game.new(p1, p2)
 game1.play
