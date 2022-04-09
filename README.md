@@ -6,4 +6,4 @@ Players take turns to answer simple math addition problems. A new math question 
 Clone the repository and then run `ruby main.rb`
 
 ## Screenshot
-[Math-game](/images/math-game.png)
+![Math-game](/images/math-game.png)
