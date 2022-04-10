@@ -48,9 +48,11 @@ class Game
 
  def calculate_lives
   if !check_answer
+    puts "Wrong Answer"
     @current_player.lives -= 1
+  else
+    puts "Correct Answer"
   end
-  puts @current_player.lives
   puts "#{@player1.name}'s lives are #{@player1.lives}"
   puts "#{@player2.name}'s lives are #{@player2.lives}"
  end
